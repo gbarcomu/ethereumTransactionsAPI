@@ -1,0 +1,12 @@
+{
+  "name": "ethereumtransactionsapi",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "~4.10.2",
+    "web3": "^1.0.0-beta.35"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}
