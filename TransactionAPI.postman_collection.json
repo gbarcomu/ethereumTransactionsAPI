@@ -1,0 +1,105 @@
+{
+	"id": "26b1a542-fc29-7975-d514-58466555f6d5",
+	"name": "TransactionAPI",
+	"description": "",
+	"order": [
+		"2493f34c-2846-33e5-662b-900e175bad28",
+		"f2ceec7d-ea44-9898-56ef-6bd3a3e18acf",
+		"80f3dc33-4bda-a112-e9fa-c38e9bcdb61a"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1538951771047,
+	"owner": 0,
+	"public": false,
+	"events": [],
+	"variables": [],
+	"auth": null,
+	"requests": [
+		{
+			"id": "2493f34c-2846-33e5-662b-900e175bad28",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/api/funds",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "POST",
+			"collectionId": "26b1a542-fc29-7975-d514-58466555f6d5",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:3000/api/funds",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1538951783876,
+			"version": 2,
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n\t\"recipientAccount\": \"0x1234\",\n\t\"amount\" : 1.5\n}"
+		},
+		{
+			"id": "80f3dc33-4bda-a112-e9fa-c38e9bcdb61a",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3000/api/transaction?transactionhash=1234",
+			"queryParams": [
+				{
+					"key": "transactionhash",
+					"value": "1234",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "GET",
+			"collectionId": "26b1a542-fc29-7975-d514-58466555f6d5",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:3000/api/transaction?transactionhash=1234",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1538951802441,
+			"version": 2,
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "f2ceec7d-ea44-9898-56ef-6bd3a3e18acf",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3000/api/balance",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "GET",
+			"collectionId": "26b1a542-fc29-7975-d514-58466555f6d5",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:3000/api/balance",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1538951791927,
+			"version": 2,
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		}
+	]
+}

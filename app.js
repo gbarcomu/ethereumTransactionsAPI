@@ -26,11 +26,13 @@ app.get(ethConfig.API_PATH + '/balance', (req, res) => {
 });
 
 app.post(ethConfig.API_PATH + '/funds', (req, res) => {
-  const { recipientAcount, destinationAddress } = req.body;
+  const { recipientAccount, amount } = req.body;
+  console.log(recipientAccount + " " + amount)
   res.send();
 });
 
 app.get(ethConfig.API_PATH + '/transaction', (req, res) => {
   const { transactionhash } = req.query;
+  console.log(transactionhash);
   res.send();
 });
